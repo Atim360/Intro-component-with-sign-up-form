@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class="signUp">
+    <header class="signUp__header">
+      <h1 class="signUp--title-h1 signUp--margin-b1">
+        Learn to code by watching others
+      </h1>
+      <p class="signUp--paragraph-regular">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </header>
+    <section class="signUp__section">
+      <div class="signUp__sectionNotice">
+        <p class="signUp--paragraph-regular">
+          <span class="signUp--paragraph-semibold">Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+      </div>
+      <form class="signUp__sectionForm" action="/" method="GET">
+        <div class="signUp__sectionForm--inputField">
+          <input class="signUp__sectionForm--input-text" type="text" name="firstName" placeholder="First Name">
+          <img class="signUp--display-none signUp__sectionFormValidationError signUp__sectionForm--icon-error" src="images/icon-error.svg" alt="error icon">
+          <span class="signUp--display-none signUp__sectionFormValidationError signUp--paragraph-regular signUp--color-red signUp--font-small">
+            First Name cannot be empty
+          </span>
+        </div>
+        <div class="signUp__sectionForm--inputField">
+          <input class="signUp__sectionForm--input-text" type="text" name="lastName" placeholder="Last Name">
+          <img class="signUp--display-none signUp__sectionFormValidationError signUp__sectionForm--icon-error" src="images/icon-error.svg" alt="error icon">
+          <span class="signUp--display-none signUp__sectionFormValidationError signUp--paragraph-regular signUp--color-red signUp--font-small">
+            Last Name cannot be empty
+          </span>
+        </div>
+        <div class="signUp__sectionForm--inputField">
+          <input class="signUp__sectionForm--input-text" type="text" name="email" placeholder="Email Address">
+          <img class="signUp--display-none signUp__sectionFormValidationError signUp__sectionForm--icon-error" src="images/icon-error.svg" alt="error icon">
+          <span class="signUp--display-none signUp__sectionFormValidationError signUp--paragraph-regular signUp--color-red signUp--font-small">
+            Looks like this is not an email
+          </span>
+        </div>
+        <div class="signUp__sectionForm--inputField">
+          <input class="signUp__sectionForm--input-text" type="password" name="password" placeholder="Password">
+          <img class="signUp--display-none signUp__sectionFormValidationError signUp__sectionForm--icon-error" src="images/icon-error.svg" alt="error icon">
+          <span class="signUp--display-none signUp__sectionFormValidationError signUp--paragraph-regular signUp--color-red signUp--font-small">
+            Password cannot be empty
+          </span>
+        </div>
+        <button type="submit" class="signUp__sectionForm--button-submit">
+          Claim your free trial
+        </button>
+        <div class="signUp__sectionFormDisclaimer">
+          By clicking the button, you are agreeing to our <span class="signUp--paragraph-semibold signUp--color-red">Terms and Services</span>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
